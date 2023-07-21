@@ -347,3 +347,29 @@
 // console.log(person)
 // console.log(person.hobbies)
 
+
+// Dot and bracket notations
+// const person={
+//         name:'hanzala',
+//         age:21,
+//         hobbies:['playing','studing','coding'],
+//         "relation ship":"single"
+//     }
+   
+// console.log( person.name);
+
+// console.log(person['relation ship']);
+
+//Adding new key from new variable name 
+
+// const key='email'
+// const person={
+//             name:'hanzala',
+//             age:21,
+//             hobbies:['playing','studing','coding'],
+//             "relation ship":"single"
+//         }
+
+//         person[key]='shaikhanzalagmail.com';
+//         console.log(person);
+        
