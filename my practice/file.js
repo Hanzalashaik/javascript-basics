@@ -372,4 +372,66 @@
 
 //         person[key]='shaikhanzalagmail.com';
 //         console.log(person);
-        
+
+//Loops in objcts
+
+const person={
+            name:'hanzala',
+            age:21,
+            hobbies:['playing','studing','coding'],
+            "relation ship":"single"
+        }
+
+        // for(let key in person){
+        //     console.log(key);
+            
+        // }
+        // for(let key in person){
+        //     console.log(person[key]);
+            
+        // }
+
+// Object.keys()
+
+// console.log(Object.keys(person));
+// console.log(typeof Object.keys(person));
+
+// const val=Array.isArray(Object.keys(person))
+// console.log(val);
+
+// for(let key of Object.keys(person)){
+//     console.log(person[key]);
+    
+// }
+
+//Computed Properties
+
+// const key1='objkey1'
+// const key2='objkey2'
+
+// const value1='myvalue1'  
+// const value2='myvalue2'
+
+// const obj={
+
+// }
+// obj[key1]=value1
+// obj[key2]=value2
+
+// console.log(obj);
+
+
+//Spread Operator in Objects
+
+// const obj1={
+//     key1:'value1',
+//     key2:'value2'
+// }
+// const obj2={
+//     key3:'value3',
+//     key4:'value4',
+//     key1:"updatedkey" //same key1 simply it takes updated value 
+// }
+
+// const newobj={...obj1,...obj2}
+// console.log(newobj);
