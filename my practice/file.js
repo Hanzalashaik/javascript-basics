@@ -375,17 +375,17 @@
 
 //Loops in objcts
 
-const person={
-            name:'hanzala',
-            age:21,
-            hobbies:['playing','studing','coding'],
-            "relation ship":"single"
-        }
+// const person={
+//             name:'hanzala',
+//             age:21,
+//             hobbies:['playing','studing','coding'],
+//             "relation ship":"single"
+//         }
 
-        // for(let key in person){
-        //     console.log(key);
+//         for(let key in person){
+//             console.log(key);
             
-        // }
+//         }
         // for(let key in person){
         //     console.log(person[key]);
             
@@ -435,3 +435,42 @@ const person={
 
 // const newobj={...obj1,...obj2}
 // console.log(newobj);
+
+
+// Object Destructuring 
+
+// const band={
+//     bandname:'abba jabba',
+//     song:'Tere bin',
+//     year:2001,
+//     famoussong:"jile le"
+// }
+
+// const {bandname,song}=band;
+// console.log(bandname);
+
+// const {bandname:var1,song:var2 ,...restinfo}=band;
+
+// console.log(song);
+// console.log(var1);
+// console.log(restinfo);
+
+//Object inside Array
+
+// const users=[
+//     {userid:1,fname:"shaik",gender:"male"},
+//     {userid:2,fname:"hanzala",gender:"male"},
+//     {userid:3,fname:"ali",gender:"male"}
+// ]
+
+// // for(let user of users){
+// //     console.log(user);
+    
+// // }
+
+// //Nested Destructuring 
+// let [{gender:g}]=users;
+
+// console.log(g);
+
+
