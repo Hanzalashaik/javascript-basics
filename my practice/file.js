@@ -250,7 +250,7 @@
 // console.log(fruits);
 // console.log(removedfriut);
 
-// primitive type 
+// primitive type
 
 // let num1=4;
 // let num2=num1;
@@ -266,7 +266,6 @@
 
 // console.log(arr1 );
 // console.log(arr2);
-
 
 // clone an array using slice method
 
@@ -304,7 +303,7 @@
 //     console.log(fruit);
 // }
 
-// for in loop 
+// for in loop
 // it gives the index of all elements in an Array
 
 // for(let fruit in fruits){
@@ -347,7 +346,6 @@
 // console.log(person)
 // console.log(person.hobbies)
 
-
 // Dot and bracket notations
 // const person={
 //         name:'hanzala',
@@ -355,12 +353,12 @@
 //         hobbies:['playing','studing','coding'],
 //         "relation ship":"single"
 //     }
-   
+
 // console.log( person.name);
 
 // console.log(person['relation ship']);
 
-//Adding new key from new variable name 
+//Adding new key from new variable name
 
 // const key='email'
 // const person={
@@ -384,12 +382,12 @@
 
 //         for(let key in person){
 //             console.log(key);
-            
+
 //         }
-        // for(let key in person){
-        //     console.log(person[key]);
-            
-        // }
+// for(let key in person){
+//     console.log(person[key]);
+
+// }
 
 // Object.keys()
 
@@ -401,7 +399,7 @@
 
 // for(let key of Object.keys(person)){
 //     console.log(person[key]);
-    
+
 // }
 
 //Computed Properties
@@ -409,7 +407,7 @@
 // const key1='objkey1'
 // const key2='objkey2'
 
-// const value1='myvalue1'  
+// const value1='myvalue1'
 // const value2='myvalue2'
 
 // const obj={
@@ -420,7 +418,6 @@
 
 // console.log(obj);
 
-
 //Spread Operator in Objects
 
 // const obj1={
@@ -430,14 +427,13 @@
 // const obj2={
 //     key3:'value3',
 //     key4:'value4',
-//     key1:"updatedkey" //same key1 simply it takes updated value 
+//     key1:"updatedkey" //same key1 simply it takes updated value
 // }
 
 // const newobj={...obj1,...obj2}
 // console.log(newobj);
 
-
-// Object Destructuring 
+// Object Destructuring
 
 // const band={
 //     bandname:'abba jabba',
@@ -465,12 +461,35 @@
 
 // // for(let user of users){
 // //     console.log(user);
-    
+
 // // }
 
-// //Nested Destructuring 
+// //Nested Destructuring
 // let [{gender:g}]=users;
 
 // console.log(g);
 
+//Functions Declaration
 
+// function greeting(){
+//     console.log("Hello how are you");
+
+// }
+
+// greeting();
+
+// //function return
+
+// function addition(){
+//     return 6+7;
+// }
+// const returnedvalue=addition();
+// console.log(returnedvalue);
+
+// //function passing parameters
+
+// function sum(num1,num2){
+//     return (num1+num2); 
+// }
+// const value=sum(12,45);
+// console.log(value);
