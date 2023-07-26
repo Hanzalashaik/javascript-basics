@@ -469,7 +469,7 @@
 
 // console.log(g);
 
-//Functions Declaration
+//***********************Functions Declaration***********
 
 // function greeting(){
 //     console.log("Hello how are you");
@@ -478,7 +478,7 @@
 
 // greeting();
 
-// //function return
+//***********************function return**************
 
 // function addition(){
 //     return 6+7;
@@ -493,3 +493,69 @@
 // }
 // const value=sum(12,45);
 // console.log(value);
+
+// function 1
+// input:String
+// output:First Character
+
+
+// function firstCharacter(anystring){
+
+//     char=anystring[0];
+//     console.log(char);
+    
+// }
+
+// firstCharacter("hanzala")
+
+
+// funtion 2
+// input:Array,target
+// output:index of target
+
+// function indexfinding(array , target){
+//     for(let i=0;i<array.length;i++){
+//         if(array[i]==target){
+//             return i;
+            
+//         }
+//     }
+//     return -1
+// }
+// let array=[1,2,3,4,5,6]
+// let target=2
+
+// let ans=indexfinding(array,target)
+// console.log(ans);
+
+
+/********* Arrow functions**********/
+
+// const greeting =() =>{
+//     console.log("Hello how are you");
+
+// }
+// greeting()
+
+// const sumofthree = (num1,num2,num3) =>{
+//     return num1+num2+num3
+// }
+
+// console.log(sumofthree(5,4,1));
+// console.log(typeof sumofthree());
+
+// const isEven =(n)=>{
+//     return n%2==0;
+// }
+
+// console.log(isEven(5));
+
+
+// //hoisting 
+
+// hello()
+
+// function hello(){
+//     console.log("Hello world");
+    
+// }
