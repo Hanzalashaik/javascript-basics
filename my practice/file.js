@@ -633,3 +633,66 @@
     
 // }
 // defaultfunc(3,2,4,5,6,7,86)
+
+
+//param Destructuring 
+
+// method 1
+// const person={
+//     name:"hanzala",
+//     gender:"male"
+// }
+
+// function myFunc(obj){
+//     console.log(obj.name,obj.gender);
+    
+// }
+
+// myFunc(person)
+
+// method 2
+
+// const person={
+//     name:"hanzala",
+//     gender:"male"
+// }
+// function myFunc({name,gender}){
+//     console.log(name);
+//     console.log(gender);
+    
+    
+// }
+// myFunc(person)
+
+
+/*************Call Back function************ */
+
+// function myfunc1(){
+//     console.log("hello i am function 1");
+    
+// }
+// function myfunc2(callback){
+//     console.log("i am fucntion 2");
+    
+//     callback();
+    
+// }
+
+// myfunc2(myfunc1)
+
+
+/****************Function returning function********************** */
+
+// function myfunc(){
+//     function returning(){
+//         console.log("i am returning");
+//     }
+
+//     return returning
+// }
+
+// const ans=myfunc()
+// ans();
+
+
+
