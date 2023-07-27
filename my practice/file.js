@@ -559,3 +559,77 @@
 //     console.log("Hello world");
     
 // }
+
+
+/****************Function Inside Function************************* */
+
+// const app=()=>{
+
+//     const myfunc=()=>{
+//         console.log("Hello From First Function");
+//     }
+
+//     const add=(num1 ,num2)=>{
+//         return sum=num1+num2;
+//     }
+
+//     myfunc()
+//     console.log(add(3,4));
+    
+// }
+
+// app();
+
+/*****Lexical Scope*/
+
+// const myapp=()=>{
+//     const myvar="value1"
+//     const secondfunc=()=>{
+//         const myvar=59 //lexical scope value
+//         console.log("the value will be "+myvar);//59 
+        
+//     }
+//     console.log(myvar);
+//     secondfunc()
+    
+// }
+
+// myapp()
+
+/************Block Scope and function Scope************** */
+
+//let and const varible cannot be accesed outside the block
+
+// {
+//     // block syntax
+// }
+
+
+// {
+//     let kali="hanzala";
+//     console.log(kali);
+    
+// }
+// console.log(kali); error will come
+
+
+/*********Default Parameter******** */
+
+// const defaultfunc=(a,b)=>{
+
+//     console.log(`a is ${a}`);
+//     console.log(`b is ${b}`);
+    
+// }
+// defaultfunc(3,2)
+
+
+//rest parameters
+// const defaultfunc=(a,b,...c)=>{
+
+//     console.log(`a is ${a}`);//3
+//     console.log(`b is ${b}`);//2
+//     console.log(`c is ${c}`); //4,5,6,7,86
+    
+// }
+// defaultfunc(3,2,4,5,6,7,86)
