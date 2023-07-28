@@ -489,7 +489,7 @@
 // //function passing parameters
 
 // function sum(num1,num2){
-//     return (num1+num2); 
+//     return (num1+num2);
 // }
 // const value=sum(12,45);
 // console.log(value);
@@ -498,16 +498,14 @@
 // input:String
 // output:First Character
 
-
 // function firstCharacter(anystring){
 
 //     char=anystring[0];
 //     console.log(char);
-    
+
 // }
 
 // firstCharacter("hanzala")
-
 
 // funtion 2
 // input:Array,target
@@ -517,7 +515,7 @@
 //     for(let i=0;i<array.length;i++){
 //         if(array[i]==target){
 //             return i;
-            
+
 //         }
 //     }
 //     return -1
@@ -527,7 +525,6 @@
 
 // let ans=indexfinding(array,target)
 // console.log(ans);
-
 
 /********* Arrow functions**********/
 
@@ -550,16 +547,14 @@
 
 // console.log(isEven(5));
 
-
-// //hoisting 
+// //hoisting
 
 // hello()
 
 // function hello(){
 //     console.log("Hello world");
-    
-// }
 
+// }
 
 /****************Function Inside Function************************* */
 
@@ -575,7 +570,7 @@
 
 //     myfunc()
 //     console.log(add(3,4));
-    
+
 // }
 
 // app();
@@ -586,12 +581,12 @@
 //     const myvar="value1"
 //     const secondfunc=()=>{
 //         const myvar=59 //lexical scope value
-//         console.log("the value will be "+myvar);//59 
-        
+//         console.log("the value will be "+myvar);//59
+
 //     }
 //     console.log(myvar);
 //     secondfunc()
-    
+
 // }
 
 // myapp()
@@ -604,14 +599,12 @@
 //     // block syntax
 // }
 
-
 // {
 //     let kali="hanzala";
 //     console.log(kali);
-    
+
 // }
 // console.log(kali); error will come
-
 
 /*********Default Parameter******** */
 
@@ -619,10 +612,9 @@
 
 //     console.log(`a is ${a}`);
 //     console.log(`b is ${b}`);
-    
+
 // }
 // defaultfunc(3,2)
-
 
 //rest parameters
 // const defaultfunc=(a,b,...c)=>{
@@ -630,12 +622,11 @@
 //     console.log(`a is ${a}`);//3
 //     console.log(`b is ${b}`);//2
 //     console.log(`c is ${c}`); //4,5,6,7,86
-    
+
 // }
 // defaultfunc(3,2,4,5,6,7,86)
 
-
-//param Destructuring 
+//param Destructuring
 
 // method 1
 // const person={
@@ -645,7 +636,7 @@
 
 // function myFunc(obj){
 //     console.log(obj.name,obj.gender);
-    
+
 // }
 
 // myFunc(person)
@@ -659,27 +650,24 @@
 // function myFunc({name,gender}){
 //     console.log(name);
 //     console.log(gender);
-    
-    
+
 // }
 // myFunc(person)
-
 
 /*************Call Back function************ */
 
 // function myfunc1(){
 //     console.log("hello i am function 1");
-    
+
 // }
 // function myfunc2(callback){
 //     console.log("i am fucntion 2");
-    
+
 //     callback();
-    
+
 // }
 
 // myfunc2(myfunc1)
-
 
 /****************Function returning function********************** */
 
@@ -694,5 +682,76 @@
 // const ans=myfunc()
 // ans();
 
+/*************Array Methods*************/
+//forEach
+//map
+//filter
+//reduce
+
+//forEach
+
+// const numbers=[3,5,6,7];
+
+// function myFunc(number,index){
+//     console.log(`index is ${index} and number is ${number*2}`);
+    
+// }
+
+// numbers.forEach(myFunc)
+
+//we can also create anonymous function in place of myfunc
+//anonymous functions means function without name
 
 
+// numbers.forEach(function(number,index){
+//     console.log(`index is ${index} and number is ${number*2}`);
+    
+// });
+
+//forEach in objects
+
+// const user=[
+//     {firstname:"hanzala" ,age:23},
+//     {firstname:"kali" ,age:32},
+//     {firstname:"javed" ,age:343},
+//     {firstname:"ali" ,age:31}
+// ]
+
+// user.forEach(function(user){
+//     console.log(user.firstname ,user.age);
+    
+// })
+
+
+/***************Map Method******************* */
+
+// const numbers=[2,3,4,5,6];
+
+// function square(numbers){
+//     return numbers*numbers;
+// }
+// const result=numbers.map(square)
+// console.log(result);
+
+
+//with anonymous fuction 
+// const result=numbers.map(function(numbers){
+//     return numbers*numbers;
+// })
+// console.log(result);
+
+
+/******************Filter method ********************** */
+
+// const numbers=[3,4,1,6,4,7,8,23,24,56];
+
+// const isEven=function(number){
+//     return number%2==0;
+// }
+
+// const evenNumber=numbers.filter(isEven);
+
+// console.log(evenNumber);
+
+
+/**************************************** */
