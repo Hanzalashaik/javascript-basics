@@ -694,7 +694,7 @@
 
 // function myFunc(number,index){
 //     console.log(`index is ${index} and number is ${number*2}`);
-    
+
 // }
 
 // numbers.forEach(myFunc)
@@ -702,10 +702,9 @@
 //we can also create anonymous function in place of myfunc
 //anonymous functions means function without name
 
-
 // numbers.forEach(function(number,index){
 //     console.log(`index is ${index} and number is ${number*2}`);
-    
+
 // });
 
 //forEach in objects
@@ -719,9 +718,8 @@
 
 // user.forEach(function(user){
 //     console.log(user.firstname ,user.age);
-    
-// })
 
+// })
 
 /***************Map Method******************* */
 
@@ -733,13 +731,11 @@
 // const result=numbers.map(square)
 // console.log(result);
 
-
-//with anonymous fuction 
+//with anonymous fuction
 // const result=numbers.map(function(numbers){
 //     return numbers*numbers;
 // })
 // console.log(result);
-
 
 /******************Filter method ********************** */
 
@@ -753,5 +749,69 @@
 
 // console.log(evenNumber);
 
+/*******************Sorted Method********************* */
+//It also sort the original array so it mutable
+//sort method takes all number items as a string and sort them according to ascii value
+// const arr=[1,1200,2,6,3];
 
-/**************************************** */
+// const newarray=arr.sort();
+// console.log(arr);
+
+// console.log(newarray); //1,2,3,6,1200(expected anwers)
+//but the answer is 1,1200,2,3,6
+
+//toSorted method
+
+// const arr = [1, 12, 2, 6, 3];
+
+// const newarray = arr.toSorted();
+// console.log(arr);
+
+// console.log(newarray);//1,12,2,6,3
+
+/*************************Reduce Method ************************** */
+//Reduce Method have two parameters accumulator and currentvalue 
+
+// const numbers=[1,2,3,4,5,10];
+
+// //aim:to sum all the numbers in an array
+
+// const sum=numbers.reduce((accumulator,currentValue)=>{
+//     return accumulator+currentValue
+// });
+
+// console.log(sum);
+
+//Tracking 
+
+// accumulator     currentValue    return
+//     1                2            3
+//     3                3            6
+//     6                4            10
+//     10               5            15
+//     15               10           25
+
+//real life example 
+
+// const userCart=[
+//     {productId:1,productName:"laptop",price:132000},
+//     {productId:2,productName:"mobile",price:32000},
+//     {productId:3,productName:"tv",price:2000},
+    
+// ]
+// const totalPrice=userCart.reduce((currentTotal,currentPrice)=>{
+//     return currentTotal+ currentPrice.price;
+// },0)
+
+// console.log(totalPrice);
+
+
+// real sorting using sort method
+
+// const array=[2,45,21,34,78,1];
+
+// // so here we are doing a-b means 45-21 ,if the answer came positive then we replace the a with b means 21 came first then 45
+// // for example i take 45 and 21
+// const sort=array.sort((a,b)=>a-b);
+// console.log(sort);
+
