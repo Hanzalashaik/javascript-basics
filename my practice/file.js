@@ -841,3 +841,22 @@
 // console.log(myUsers);//{userId:2,userName:"shaikh"}
 
 
+/********************Every Method **********************************/
+
+// const numbers=[2,4,6,8,10]
+
+// const ans=numbers.every((number)=>number%2==0);
+
+// console.log(ans);
+
+// //Real Life Example
+
+// const userCart=[
+//     {productId:1,productName:"laptop",price:132000},
+//     {productId:2,productName:"mobile",price:32000},
+//     {productId:3,productName:"tv",price:2000},
+// ]
+
+// const less2lakh=userCart.every((cart)=>cart.price <200000)
+// console.log(less2lakh);
+
