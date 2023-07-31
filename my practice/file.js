@@ -860,3 +860,48 @@
 // const less2lakh=userCart.every((cart)=>cart.price <200000)
 // console.log(less2lakh);
 
+/************************Some Method***************************** */
+
+// const numbers=[1,3,5,8,9]
+
+// const ans=numbers.some((number)=>number%2==0)
+
+// console.log(ans);
+
+// //Real Life Example
+
+// const userCart=[
+//     {productId:1,productName:"laptop",price:132000},
+//     {productId:2,productName:"mobile",price:32000},
+//     {productId:3,productName:"tv",price:2000},
+//     {productId:4,productName:"macbook",price:200000},
+// ]
+
+// const useritems=userCart.some((cartIteam)=>cartIteam.price >100000)
+// console.log(useritems);
+
+/************************Fill Method************************** */
+
+// const myarray=new Array(10).fill(0)
+// console.log(myarray);
+
+// const arr=[1,2,3,4,5,6,7]
+
+// arr.fill(0,2,5)
+// console.log(arr);
+
+/*********************Splice Method*************************** */
+
+// const myarr=['item1',"item2","item3"]
+
+// //delete
+
+// myarr.splice(1,1)
+// console.log(myarr);
+
+// //insert
+// myarr.splice(1,0,"insertediteam1")
+// console.log(myarr);
+
+// //delete and insert
+// myarr.splice(1,2,"insertiteam2")
