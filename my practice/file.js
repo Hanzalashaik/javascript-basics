@@ -815,3 +815,29 @@
 // const sort=array.sort((a,b)=>a-b);
 // console.log(sort);
 
+
+/****************Find Method*************************** */
+
+// const myArray=["hanzal","ali","asad","nuh"]
+
+// function isLength(string){
+//     return string.length ===3;
+// }
+
+// const ans=myArray.find(isLength)
+// console.log(ans);
+
+
+//real life Example
+
+// const users=[
+//     {userId:1,userName:"hanzala"},
+//     {userId:2,userName:"shaikh"},
+//     {userId:3,userName:"javed"},
+//     {userId:4,userName:"ali"}
+// ]
+
+// const myUsers=users.find((user)=>user.userId===2);
+// console.log(myUsers);//{userId:2,userName:"shaikh"}
+
+
