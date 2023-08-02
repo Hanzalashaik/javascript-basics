@@ -905,3 +905,65 @@
 
 // //delete and insert
 // myarr.splice(1,2,"insertiteam2")
+
+/******************Iterables****************** */
+
+// jinpe for of loop laga sakein
+
+// example:array,strings
+
+// const str="hanzala"
+
+// for(let iter of str){
+//     console.log(iter);
+    
+// }
+
+/******************Array Like objects********************* */
+// jinke pass length ki property hoti hai
+//Aur jinko aap index se acess karsakhte hai
+// example:String
+
+// const str="shaikh"
+// console.log(str.length);//6
+// console.log(str[3]);//i
+
+/****************************Sets**************************/
+
+/*
+1.sets are used to store Data
+2.no index based access.
+3.sets have its own methods
+4.order of storing the is not guranteed
+5.unique elements only 
+6.it is also a iterable
+*/
+
+// const numbers=new Set([1,2,3,4,5])
+// console.log(numbers);
+
+// //add method 
+// numbers.add(5)
+// numbers.add(6)
+// numbers.add(['item1','item2'])
+// numbers.add(['item1','item2'])
+// console.log(numbers);
+
+//has() method 
+// if(numbers.has(6)){
+//     console.log("number is present");
+    
+// }
+// else{
+//     console.log("number is not present");  
+// }
+
+
+// //values method 
+// //it is used to iterate the set
+
+// console.log(numbers.values());
+
+// //clear method is used to delete all elements from set
+// console.log(numbers.clear());
+
