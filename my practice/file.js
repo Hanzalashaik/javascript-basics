@@ -967,3 +967,34 @@
 // //clear method is used to delete all elements from set
 // console.log(numbers.clear());
 
+/*********************Maps Objects****************** */
+
+// const person=new Map();
+
+// person.set('firstName','hanzala')
+// person.set('age',21)
+// person.set('gender','male')
+// person.set([1,2,3],'onetwothree')
+// person.set({1:'one'},'one')
+// // console.log(person);
+// keys() is iterator
+// console.log(person.keys());
+
+//iterate
+// for(let key of person.keys()){
+//     console.log(key);
+    
+// }
+
+//destructing maps
+// for(let [key,value] of person){
+//     console.log(key,value);
+    
+// }
+
+//checking type
+// for(let key of person){
+//     console.log(Array.isArray(key));
+    
+// }
+
