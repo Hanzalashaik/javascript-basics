@@ -998,3 +998,77 @@
     
 // }
 
+//Real world example
+
+// const person1={
+//     id:1,
+//     firtName:"hanzala"
+// }
+// const person2={
+//     id:2,
+//     firtName:"sana"
+// }
+
+// const extraInfo=new Map();
+// extraInfo.set(person1,{age:21,gender:"male"})
+// extraInfo.set(person2,{age:20,gender:"female"})
+
+// console.log(person1.id);
+// console.log(person1.firtName);
+// console.log(extraInfo.get(person2).gender);
+
+/**********optional chaining*********** */
+
+// const user={
+//     firstName:"hanzala",
+//     // address:{houseNumber:1234}
+// }
+
+// console.log(user?.address?.houseNumber);//undefined
+
+/*****************This Keyword************** */
+// function info(){
+//     console.log(`The Person Name is ${this.firstName} and age is ${this.age}` );
+
+// }
+
+// const person2={
+//     firstName:"sana",
+//     age:20,
+//     about:info
+// }
+
+// const person3={
+//     firstName:"asad",
+//     age:22,
+//     about:info
+// }
+
+// person1.about()
+// person2.about()
+// person3.about()
+
+/******************call ,apply , bind*********************** */
+
+// const person={
+//     firstName:'hanzala',
+//     age:21,
+//     about:function(hobby,favmusian){
+//         console.log(this.firstName ,this.age ,hobby,favmusian);
+
+//     }
+// }
+// const person2={
+//     firstName:"sana",
+//     age:20
+// }
+
+// person.about.call(person2,"guitar","arijit");
+
+// //apply
+// person.about.apply(person2,["guitar","arijit"])
+
+// //bind
+// const func= person.about.bind(person,"paino","arijit");
+
+// func()
