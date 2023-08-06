@@ -1214,27 +1214,42 @@
 // 2)return {}
 // 3)it create automatic chaining
 
-// function createUser(firstName,lastName,age,email,address){
+function createUser(firstName,lastName,age,email,address){
  
-//     this.firstName=firstName;
-//     this.lastName=lastName;
-//     this.age=age;
-//     this.email=email;
-//     this.address=address;
+    this.firstName=firstName;
+    this.lastName=lastName;
+    this.age=age;
+    this.email=email;
+    this.address=address;
    
+}
+
+createUser.prototype.about=function(){
+    return `${this.firstName} is ${this.age} years old.`
+}
+
+createUser.prototype.is18=function(){
+    return this.age>=18;
+}
+
+const user1=new createUser("almizan","shaik",20,"mizan@gmail.com","address");
+console.log(user1);
+
+console.log(user1.about());
+console.log(user1.is18());
+
+// for(let key in user1){
+//     console.log(key);
+    
 // }
 
-// createUser.prototype.about=function(){
-//     return `${this.firstName} is ${this.age} years old.`
+///hasOwnProperty()
+
+// if you dont want to print prototype Key ,function then we use hasOwnProperty
+// for(let key in user1){
+//     if(user1.hasOwnProperty(key)){
+//         console.log(key);
+        
+//     }
 // }
-
-// createUser.prototype.is18=function(){
-//     return this.age>=18;
-// }
-
-// const user1=new createUser("almizan","shaik",20,"mizan@gmail.com","address");
-// console.log(user1);
-
-// console.log(user1.about());
-// console.log(user1.is18());
 
