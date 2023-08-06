@@ -1138,7 +1138,7 @@
 //     key2:"value2"
 // }
 
-// const obj2=Object.create(obj1);
+// const obj2=Object.create(obj1); //refrence creating of obj1 it is called proto
 
 // obj2.key3="value3";
 
@@ -1156,7 +1156,7 @@
 // }
 // function createUser(firstName,lastName,age,email,address){
     
-//     const user=Object.create(userMethods);
+//     const user=Object.create(userMethods);//it set the proto property
 //     user.firstName=firstName;
 //     user.lastName=lastName;
 //     user.age=age;
@@ -1173,4 +1173,45 @@
 // console.log(user1.is18());
 
 /***********************prototype*********************** */
+
+// function hello(){
+//   return "hello world"
+    
+// }
+
+
+// hello.prototype.key1="value1";
+// hello.prototype.key2="vlaue2";
+// hello.prototype.sing=function(){
+//     return "oo o jana jaana";
+
+// }
+// console.log(hello.prototype);
+// console.log(hello.prototype.sing());
+
+
+/***********************more more Efficient ***************************** */
+function createUser(firstName,lastName,age,email,address){
+    const user=Object.create(createUser.prototype);
+    user.firstName=firstName;
+    user.lastName=lastName;
+    user.age=age;
+    user.email=email;
+    user.address=address;
+    return user;
+}
+
+createUser.prototype.about=function(){
+    return `${this.firstName} is ${this.age} years old.`
+}
+
+createUser.prototype.is18=function(){
+    return this.age>=18;
+}
+
+const user1=createUser("almizan","shaik",20,"mizan@gmail.com","address");
+console.log(user1);
+
+console.log(user1.about());
+console.log(user1.is18());
 
