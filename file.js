@@ -770,7 +770,7 @@
 // console.log(newarray);//1,12,2,6,3
 
 /*************************Reduce Method ************************** */
-//Reduce Method have two parameters accumulator and currentvalue 
+//Reduce Method have two parameters accumulator and currentvalue
 
 // const numbers=[1,2,3,4,5,10];
 
@@ -782,7 +782,7 @@
 
 // console.log(sum);
 
-//Tracking 
+//Tracking
 
 // accumulator     currentValue    return
 //     1                2            3
@@ -791,20 +791,19 @@
 //     10               5            15
 //     15               10           25
 
-//real life example 
+//real life example
 
 // const userCart=[
 //     {productId:1,productName:"laptop",price:132000},
 //     {productId:2,productName:"mobile",price:32000},
 //     {productId:3,productName:"tv",price:2000},
-    
+
 // ]
 // const totalPrice=userCart.reduce((currentTotal,currentPrice)=>{
 //     return currentTotal+ currentPrice.price;
 // },0)
 
 // console.log(totalPrice);
-
 
 // real sorting using sort method
 
@@ -814,7 +813,6 @@
 // // for example i take 45 and 21
 // const sort=array.sort((a,b)=>a-b);
 // console.log(sort);
-
 
 /****************Find Method*************************** */
 
@@ -827,7 +825,6 @@
 // const ans=myArray.find(isLength)
 // console.log(ans);
 
-
 //real life Example
 
 // const users=[
@@ -839,7 +836,6 @@
 
 // const myUsers=users.find((user)=>user.userId===2);
 // console.log(myUsers);//{userId:2,userName:"shaikh"}
-
 
 /********************Every Method **********************************/
 
@@ -916,7 +912,7 @@
 
 // for(let iter of str){
 //     console.log(iter);
-    
+
 // }
 
 /******************Array Like objects********************* */
@@ -942,24 +938,23 @@
 // const numbers=new Set([1,2,3,4,5])
 // console.log(numbers);
 
-// //add method 
+// //add method
 // numbers.add(5)
 // numbers.add(6)
 // numbers.add(['item1','item2'])
 // numbers.add(['item1','item2'])
 // console.log(numbers);
 
-//has() method 
+//has() method
 // if(numbers.has(6)){
 //     console.log("number is present");
-    
+
 // }
 // else{
-//     console.log("number is not present");  
+//     console.log("number is not present");
 // }
 
-
-// //values method 
+// //values method
 // //it is used to iterate the set
 
 // console.log(numbers.values());
@@ -983,19 +978,19 @@
 //iterate
 // for(let key of person.keys()){
 //     console.log(key);
-    
+
 // }
 
 //destructing maps
 // for(let [key,value] of person){
 //     console.log(key,value);
-    
+
 // }
 
 //checking type
 // for(let key of person){
 //     console.log(Array.isArray(key));
-    
+
 // }
 
 //Real world example
@@ -1108,7 +1103,7 @@
 //    is18:function(){
 //         return this.age>=18;
 //     }
-    
+
 // }
 
 // function createUser(firstName,lastName,age,email,address){
@@ -1155,7 +1150,7 @@
 //     }
 // }
 // function createUser(firstName,lastName,age,email,address){
-    
+
 //     const user=Object.create(userMethods);//it set the proto property
 //     user.firstName=firstName;
 //     user.lastName=lastName;
@@ -1176,9 +1171,8 @@
 
 // function hello(){
 //   return "hello world"
-    
-// }
 
+// }
 
 // hello.prototype.key1="value1";
 // hello.prototype.key2="vlaue2";
@@ -1189,29 +1183,58 @@
 // console.log(hello.prototype);
 // console.log(hello.prototype.sing());
 
-
 /***********************more more Efficient ***************************** */
-function createUser(firstName,lastName,age,email,address){
-    const user=Object.create(createUser.prototype);
-    user.firstName=firstName;
-    user.lastName=lastName;
-    user.age=age;
-    user.email=email;
-    user.address=address;
-    return user;
-}
+// function createUser(firstName,lastName,age,email,address){
+//     const user=Object.create(createUser.prototype);
+//     user.firstName=firstName;
+//     user.lastName=lastName;
+//     user.age=age;
+//     user.email=email;
+//     user.address=address;
+//     return user;
+// }
 
-createUser.prototype.about=function(){
-    return `${this.firstName} is ${this.age} years old.`
-}
+// createUser.prototype.about=function(){
+//     return `${this.firstName} is ${this.age} years old.`
+// }
 
-createUser.prototype.is18=function(){
-    return this.age>=18;
-}
+// createUser.prototype.is18=function(){
+//     return this.age>=18;
+// }
 
-const user1=createUser("almizan","shaik",20,"mizan@gmail.com","address");
-console.log(user1);
+// const user1=createUser("almizan","shaik",20,"mizan@gmail.com","address");
+// console.log(user1);
 
-console.log(user1.about());
-console.log(user1.is18());
+// console.log(user1.about());
+// console.log(user1.is18());
+
+/******************new Keyword***************/
+// new keyword does three thingd
+// 1)this={};
+// 2)return {}
+// 3)it create automatic chaining
+
+// function createUser(firstName,lastName,age,email,address){
+ 
+//     this.firstName=firstName;
+//     this.lastName=lastName;
+//     this.age=age;
+//     this.email=email;
+//     this.address=address;
+   
+// }
+
+// createUser.prototype.about=function(){
+//     return `${this.firstName} is ${this.age} years old.`
+// }
+
+// createUser.prototype.is18=function(){
+//     return this.age>=18;
+// }
+
+// const user1=new createUser("almizan","shaik",20,"mizan@gmail.com","address");
+// console.log(user1);
+
+// console.log(user1.about());
+// console.log(user1.is18());
 
