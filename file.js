@@ -1214,29 +1214,29 @@
 // 2)return {}
 // 3)it create automatic chaining
 
-function createUser(firstName,lastName,age,email,address){
+// function createUser(firstName,lastName,age,email,address){
  
-    this.firstName=firstName;
-    this.lastName=lastName;
-    this.age=age;
-    this.email=email;
-    this.address=address;
+//     this.firstName=firstName;
+//     this.lastName=lastName;
+//     this.age=age;
+//     this.email=email;
+//     this.address=address;
    
-}
+// }
 
-createUser.prototype.about=function(){
-    return `${this.firstName} is ${this.age} years old.`
-}
+// createUser.prototype.about=function(){
+//     return `${this.firstName} is ${this.age} years old.`
+// }
 
-createUser.prototype.is18=function(){
-    return this.age>=18;
-}
+// createUser.prototype.is18=function(){
+//     return this.age>=18;
+// }
 
-const user1=new createUser("almizan","shaik",20,"mizan@gmail.com","address");
-console.log(user1);
+// const user1=new createUser("almizan","shaik",20,"mizan@gmail.com","address");
+// console.log(user1);
 
-console.log(user1.about());
-console.log(user1.is18());
+// console.log(user1.about());
+// console.log(user1.is18());
 
 // for(let key in user1){
 //     console.log(key);
@@ -1252,4 +1252,80 @@ console.log(user1.is18());
         
 //     }
 // }
+
+/********************class keyword******************* */
+
+// class CreateUser{
+//     constructor(firstName,lastName,age, email,address){
+//         this.firstName=firstName;
+//         this.lastName=lastName;
+//         this.age=age;
+//         this.email=email;
+//         this.address=address;
+//     }
+
+//     about(){
+//         return `${this.firstName} is ${this.age} years old.`
+//     }
+//     is18(){
+//         return this.age>=18
+//     }
+// }
+
+
+// const user1=new CreateUser("hanzala","shaik",18,"shaik@gmail.com","myaddress");
+
+// console.log(user1);
+
+// console.log(user1.about());
+
+/*******************super keyword ,extends keyword******************/
+
+// class Animal{
+//     constructor(name,nickname,age){
+//         this.name=name;
+//         this.nickname=nickname;
+//         this.age=age;
+//     }
+//     iscute(){
+//         return this.age<=1;
+//     }
+    
+//     isCute(){
+//         return true;
+//     }
+
+// }
+// class cat extends Animal{
+//     constructor(name ,age,nickname,breed){
+//         super(name,age,nickname)
+//         this.breed=breed;
+//     }
+//     static
+// }
+
+// const firstanimal=new Animal("Cat","cupid",1);
+// console.log(firstanimal);
+// console.log(firstanimal.isCute());
+// console.log(firstanimal.iscute());
+// const Cat=new cat("Cat","cupid",1,"persian")
+// console.log(Cat);
+
+
+/*******************static keyword************** */
+// class Person{
+//     constructor(firstName, lastName, age){
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.age = age;
+//     }
+//     static classInfo(){
+//         return 'this is person class';
+//     }
+// }
+// const person1=new Person("hanzala","shaik",18)
+// console.log(person1);
+// const info=Person.classInfo();
+// console.log(info);
+
 
